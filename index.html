@@ -111,23 +111,18 @@ Ako po si
             </a>
         </div>
         &nbsp; &nbsp; &nbsp;
-            <audio controls autoplay>
-  <source src="GUARDIANS RAP SONG 2022.mp3" type="audio/ogg">
-  <source src="GUARDIANS RAP SONG 2022.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+            
+<!---Audio --> 
+  <audio controls style="display:none;" loop id="audio"> 
+   <source id="audio-source" src="GUARDIANS RAP SONG 2022.mp3"> 
+  </audio> <script>
 
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myAudio").autoplay;
-  document.getElementById("demo").innerHTML = x;
-}
-</script>
-
+window.addEventListener("mouseover",play);
+window.addEventListener("click",play);
+function play(){ document.getElementById("audio").play();  
+               } 
+                 </script>
+ 
     </body>
 
 </html>
